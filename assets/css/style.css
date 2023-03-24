@@ -392,23 +392,28 @@ header {
 
 .section-ourteam {
     display: flex;
+    background-size: cover;
     text-align: center;
     padding-left: 200px;
     padding-right: 200px;
-    margin-top: 0;
-    justify-content: space-around;
-
+    margin: o auto;
+    justify-content: center;
+    height: 550px;
+    background-image: url('../../media/foto10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 
 .section-ourteam--card {
     flex: 1; 
-    height: 30em;
+    height: auto;
+    width: auto;
     background-color: var(--bgDefLight);
     padding: 20px;
     margin: auto 10px;
     justify-content: center;
     align-items: center;
+
 }
 
 .section-ourteam--photo {
@@ -441,6 +446,31 @@ header {
     background-color: var(--decopri) !important;
 }
 
+.ourteam .pointers {
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+
+.ourteam .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--decopri);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.ourteam .pointer.active {
+    background-color: var(--decopri);
+}
+.ourteam .pointer:hover {
+    background-color: var(--decopri);
+}
+
 .section-happyteam {
     display: flex;
     justify-content: center;
@@ -457,12 +487,161 @@ header {
     flex: 1;
     color:#5f5f5f;
     width: 700px;
-    align-items: center;
-    justify-content: center;
-    margin: 40px;
+    text-align: center;
+    margin: 60px;
 }
 
 .section-happyteam--quote img {
-    margin-left: 47%;
-    margin-bottom: 20px;
+    flex: 1;
+}
+
+.ourteam .pointers {
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    justify-content:center;
+ 
+    
+}
+
+.ourteam .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--decopri);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.section-happyteam .pointer.active {
+    background-color: var(--decopri);
+}
+.section-happyteam .pointer:hover {
+    background-color: var(--decopri);
+}
+
+ .happy-pointers {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content:center;
+ 
+    
+}
+
+.section-happyteam .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--decopri);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.section-happyteam .pointer.active {
+    background-color: var(--decopri);
+}
+.section-happyteam .pointer:hover {
+    background-color: var(--decopri);
+}
+
+
+.output{
+    display: flex;
+    text-align: left;
+    padding-top: 0 auto;
+    border-radius: 20px;
+    height: 100%;
+    border: 2px dotted white;
+    align-items: center;
+    white-space: break-spaces;
+    color: white;
+  }
+  
+  #endereco {
+      color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px;
+    line-height: 35px;
+  }
+
+  textarea{resize:none; }
+.form-wrapper{padding:30px 0px;}
+.form-group{margin-bottom:0; }
+.form-control{font-size:1.125em; background-clip: inherit; font-family: 'Poppins', sans-serif; }
+.form-control:focus{box-shadow:none; color:inherit !important;}
+.form-control{padding: 0 20px; border-radius: 30px; line-height: 50px; height: auto; border: 2px solid #cccccc; background:#ffffff; margin-bottom: 15px;}
+.transparent-field .form-control{background:transparent; }
+select option{color:#000000 !important }
+.style-1 .form-control{border:none; border-radius:0; border-bottom:1px solid #c2c2c2; padding:0px 0px; line-height:40px; height:40px; background:none; font-family: 'Poppins', sans-serif; font-size:15px; color:var(--black-color); -webkit-appearance:none; -moz-appearance:none;}
+.style-1 .form-control:focus{box-shadow:none; border-color:var(--main-color); }
+.style-1 textarea.form-control{ height:120px; }
+textarea.form-control{line-height:28px; padding-top:15px; padding-bottom:15px; height:150px;}
+select.form-control {background-image:url(images/select-arrow.png) !important; background-repeat:no-repeat !important; background-position:center right 22px !important;  }
+
+.transparent-field select.form-control {background-image:url(images/select-arrow-light.png) !important;}
+
+.brands {
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 300px 30px 300px;
+    
+}
+
+.default.light.marcas {
+    background-color: white;
+    box-shadow: 5px -17px 15px -21px rgba(0,0,0,0.45), 25px 0px 20px -20px rgba(0,0,0,0.45),0px 25px 20px -20px rgba(0,0,0,0.45), -25px 10px 20px -20px rgba(0,0,0,0.45);
+    width: 100%;
+}
+
+.brand-logo{
+    flex: 1; 
+}
+
+
+
+
+.plan-cards{
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+}
+
+.plan-name {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.price span {
+    color: var(--descColorDark);
+    font-size: 16px;
+    padding-top: 0 auto;
+   
+}
+
+.price-card {
+    margin: 20px;
+    background-color: white;
+    width: 22%;
+    height: 400px;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.plan-content {
+    padding-top: 30px;
 }
