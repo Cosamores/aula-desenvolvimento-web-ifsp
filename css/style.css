@@ -83,3 +83,33 @@ body {
 .modal .modal-content h1{
     margin: 0;
 }
+
+#tickers-list {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+#tickers-list .ticker {
+    background-color: #373737;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 5px 3px  #ff830860;
+
+}
+
+#tickers-list .ticker {
+    margin-top: 0;
+}
+
+.btn-close--ticker {
+    appearance: none;
+    background-color:transparent;
+    border: none;
+    margin-left: 80%;
+}
